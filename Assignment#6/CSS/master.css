@@ -1,0 +1,88 @@
+/* Link My Fonts */
+@font-face {
+  /* 200 */
+  font-family: "Rubik-Light";
+  src: url(../Font_Family/static/Rubik-Light.ttf);
+}
+@font-face {
+  /* 400 */
+  font-family: "Rubik-Regular";
+  src: url(../Font_Family/static/Rubik-Regular.ttf);
+}
+@font-face {
+  /* 500 */
+  font-family: "Rubik-Medium";
+  src: url(../Font_Family/static/Rubik-Medium.ttf);
+}
+/* Link Fonts End */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Rubik-Regular, Arial;
+}
+
+:root {
+  --XGray: #ccc;
+  --XGreen: #009688;
+  --xOrange: rgb(255, 123, 0);
+}
+
+html {
+  font-size: 20px;
+}
+
+/* Start Page Style ❤❤❤ */
+
+/* Assignment Part #1 */
+
+div {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 40px;
+  border: 5px solid var(--xOrange);
+  margin: 40px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  border: inherit;
+  padding: inherit;
+  background-color: var(--XGray);
+}
+
+.Clone {
+  border-color: var(--XGreen);
+}
+
+/* Assignment Part #2 */
+
+.One,
+.Two,
+.Three {
+  text-align: center;
+  padding: 25px;
+  background-color: transparent;
+}
+
+.One {
+  font-size: 2.5rem;
+}
+
+.Two {
+  font-size: 2rem;
+}
+
+.Three {
+  font-size: 1.5rem;
+}
+
+/* Style hr 😘 */
+hr {
+  height: 3px;
+  border: none;
+  border: 1px solid black;
+  background-color: gray;
+}

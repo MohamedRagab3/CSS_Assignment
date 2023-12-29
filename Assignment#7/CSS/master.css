@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../Font_Family/static/Rubik-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik-Regular";
+}
+
+html {
+  font-size: 20px;
+}
+
+:root {
+  --LGray: aqua;
+  --DGray: rgb(22, 204, 204);
+}
+
+/* Assignment Part #1 */
+.parent {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  background-color: var(--DGray);
+}
+
+.parent div {
+  padding: 20px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: var(--LGray);
+  float: left;
+}
+
+.full {
+  width: calc(100% - 30px);
+  margin: 15px 0 15px 15px;
+}
+
+.Three {
+  width: calc((100% - 60px) / 3);
+}
+
+.Two {
+  width: calc((100% - 45px) / 2);
+}
+
+.Four {
+  width: calc((100% - 75px) / 4);
+}
+
+.clear {
+  clear: both;
+}
+
+/* Assignment Part #2 */
+
+div {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: gray;
+  color: black;
+}
+
+.one {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.two {
+  opacity: 0.1;
+}

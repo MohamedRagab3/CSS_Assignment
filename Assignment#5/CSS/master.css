@@ -1,0 +1,94 @@
+/* Start Link My Fonts */
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url(../Font_Family/static/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../Font_Family/static/Rubik-Regular.ttf);
+}
+/* End Link My Fonts */
+
+body {
+  font-family: "Rubik-Regular";
+  font-size: 20px;
+}
+
+/* Assignment Part #1 */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.My-P {
+  width: 600px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  background-color: #ccc;
+  text-align: center;
+  box-sizing: border-box;
+
+  text-shadow: 1px 1px 0 red, 2px 2px 0 blue, 3px 3px 0 purple;
+}
+
+/* Assignment Part #2 */
+
+.one {
+  text-transform: uppercase;
+}
+
+.two {
+  text-transform: capitalize;
+}
+
+.three {
+  text-transform: lowercase;
+}
+
+/* Assignment Part #3 */
+
+.Lorem1 {
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #eee;
+}
+
+.Lorem2 {
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #eee;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Lorem3 {
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Assignment Part #4 */
+
+a {
+  color: white;
+  font-size: 30px;
+  padding: 25px 30px;
+  text-transform: capitalize;
+  background-color: #009688;
+  border-bottom: 10px solid #00514a;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,40 @@
+/* Start Connect My Fonts */
+@font-face {
+    /*400*/
+    font-family: "Roboto-Regular";
+    src: url(webfonts/fa-brands-400.ttf);
+}
+/* End Connect My Fonts */
+
+/* Assignment Part #1 */
+
+body{
+    font-family: "Roboto-Regular";    
+    font-size: 15px;
+}
+
+div div .title {
+    color: red;
+}
+
+div .title{
+    color: blue;
+}
+
+div p,
+.title{
+    color: green;
+}
+
+/* Assignment Part #2 */
+
+.Second{
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(247, 56, 88);
+    max-width: 400px;
+    max-height: 50px;
+    width: fit-content;
+    overflow-y: hidden;
+}

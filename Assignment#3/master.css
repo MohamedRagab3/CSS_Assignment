@@ -1,0 +1,52 @@
+/* Part #1 */
+.All {
+  font-size: 20px;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+  outline: 5px solid black;
+}
+
+.First {
+  border: 5px solid red;
+}
+
+.Second {
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue green;
+}
+
+.Third {
+  border-width: 5px;
+  border-style: dashed;
+  border-color: red green blue yellow;
+}
+
+/* Part #2 */
+.All2 {
+  font-size: 22px;
+  width: 400px;
+  padding: 10px;
+  margin: 30px;
+  background-color: #eee;
+  outline: 10px solid #eee;
+
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+.First2 {
+  border-left: 6px rgb(255, 76, 106) solid;
+}
+
+.Second2 {
+  border-left: 6px rgb(255, 76, 106) solid;
+  visibility: hidden;
+}
+
+.Third2 {
+  border-left: 6px rgb(13, 158, 13) solid;
+}
