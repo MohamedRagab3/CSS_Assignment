@@ -1,0 +1,126 @@
+/* Start Ready */
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../Font_Family/static/Rubik-Regular.ttf);
+}
+
+html {
+  font-size: 20px;
+  font-family: "Rubik-Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --HGray: #eee;
+  --DGray: #aaa;
+  --XRed: red;
+  --XPink: #e91e63;
+  --XWatherMelon: #f44336;
+  --XWhite: white;
+}
+
+/* Let's Go #1 */
+.Boy div {
+  width: 300px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--HGray);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 3;
+}
+
+.Boy div:empty {
+  background-color: var(--XRed);
+}
+
+/* Let's Go #2 */
+
+.Father div {
+  padding: 30px 30px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.4rem;
+  background-color: var(--DGray);
+  text-align: center;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.Father div::first-letter {
+  color: var(--XWhite);
+  font-size: 1.6rem;
+  padding: 15px 20px;
+  background-color: var(--XRed);
+}
+
+/* Let's Go #3 */
+
+.GrandFather p {
+  width: 700px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  background-color: var(--HGray);
+  position: relative;
+  border-left: 10px solid var(--XPink);
+}
+
+.GrandFather p::after {
+  content: attr(data-person);
+  padding: 25px 30px;
+  width: 100px;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: var(--HGray);
+  position: absolute;
+  top: 2.5px;
+  left: -200px;
+}
+
+.GrandFather p::before {
+  content: "";
+  border-width: 25px;
+  border-style: solid;
+  border-color: transparent var(--XPink) transparent transparent;
+  position: absolute;
+  top: 23px;
+  left: -51px;
+}
+
+/* Let's Go #4 */
+
+.Grand_GrandFather p {
+  width: 900px;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--HGray);
+  font-size: 1.4rem;
+  border-right: 10px solid var(--XRed);
+  counter-increment: Counter; /* The New */
+  position: relative;
+}
+
+.Grand_GrandFather p::before {
+  content: counter(Counter);
+  background-color: var(--XRed);
+  color: var(--XWhite);
+  font-size: 1.5rem;
+  padding: 24px 30px;
+  position: absolute;
+  top: 0;
+  left: -65px;
+}
