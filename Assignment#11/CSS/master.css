@@ -1,0 +1,86 @@
+/* Let's Prepare  */
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../Font_Family/static/Rubik-Regular.ttf);
+}
+
+html {
+  font-size: 20px;
+  font-family: "Rubik-Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --HGray: #eee;
+  --White: White;
+  --Black: black;
+  --Blue: slateblue;
+  --DBlue: rgb(69, 62, 109);
+  --Turquoise: rgb(15, 203, 203);
+
+  /* --mainColor: #009688; */
+  /* --mainPadding: 10px; */
+}
+
+/* Let's Start Part #1 */
+
+.Bigger {
+  width: 600px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--Blue);
+
+  text-align: center;
+  color: var(--White);
+  font-size: 1.5rem;
+  padding: 25px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+
+  transition: all 1s 0.2s ease;
+}
+
+.Smallest {
+  background-color: var(--DBlue);
+  transition: all 0.5s 0.8s ease;
+}
+
+.Bigger:hover {
+  width: 800px;
+  height: 250px;
+  color: var(--Turquoise);
+  font-size: 1.8rem;
+  margin-top: 50px;
+}
+
+/* Let's Start Part #2 */
+
+.Father div {
+  font-size: 1rem !important;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none !important;
+  background-color: var(--HGray) !important;
+  color: var(--Black) !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Let's Start Part #3 */
+
+.Boy div {
+  width: 500px;
+  margin: 20px auto;
+  padding: var(--mainPadding, 20px);
+  font-size: 1.5rem;
+  color: var(--mainColor, red);
+  border: 3px solid var(--mainColor, black);
+}
