@@ -1,0 +1,142 @@
+/* Let's Prepare Our Work */
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../Font_Family/static/Rubik-Regular.ttf);
+}
+
+html {
+  font-size: 20px;
+  font-family: "Rubik-Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Red: red;
+  --HGray: #ddd;
+  --DGray: #aaa;
+  --White: white;
+  --Blue: #03a9f4;
+  --Orange: #ff5722;
+
+  --MainMargin: 20px;
+  --MainPadding: 20px;
+}
+
+/* Important Note: */
+/*
+justify-content: center --> For align Horizontal
+
+align-items: Stratch	--> For align Vertical
+align-items: flex-start
+align-items: flex-end
+align-items: center
+
+align-content: stretch	--> For align content
+flex-grow: 0   		--> For increase Size
+flex-shrink: 0		--> For increase Size
+order: 1
+flex-basis: auto 	-->As Width But use Width&Height Use With Flex Only   "Row >> Column". 
+align-self: 
+*/
+/* Let's Start Part #1 */
+
+h2 {
+  padding: var(--MainPadding);
+}
+
+.Flex {
+  background-color: var(--HGray);
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 15px solid var(--HGray);
+
+  display: flex;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+}
+/* display: flex;
+  flex-direction: row-reverse;
+  flex-flow: row wrap;
+*/
+.Flex div {
+  width: calc(1000px * 0.25);
+  padding: var(--MainPadding);
+  box-sizing: border-box;
+  background-color: var(--Red);
+  text-align: center;
+  color: var(--White);
+}
+
+.Float {
+  background-color: var(--HGray);
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  border: 15px solid var(--HGray);
+}
+
+.Float div {
+  width: calc(1000px * 0.25);
+  padding: var(--MainPadding);
+  box-sizing: border-box;
+  background-color: var(--Red);
+  text-align: center;
+  color: var(--White);
+  float: left;
+}
+
+hr {
+  background-color: var(--DGray);
+  height: 1.5px;
+  box-shadow: 3px 1px 5px 0px var(--DGray);
+}
+
+/* Let's Start Part #2 */
+
+.GrandFather {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--HGray);
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: var(--Orange);
+  box-shadow: 7px 0 2px 0px var(--Orange), -7px 0 2px 0px var(--Blue);
+  /* box-shadow: 0px 7px 2px 0px var(--Blue); */
+}
+
+/* Let's Start Part #3 */
+
+.parent {
+  width: 600px;
+  height: 300px;
+  margin: 30px auto;
+  background-color: var(--HGray);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+}
+
+.parent div {
+  background-color: var(--Orange);
+  width: calc(550px / 3);
+  color: var(--White);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Let's Start Part #4 */
+

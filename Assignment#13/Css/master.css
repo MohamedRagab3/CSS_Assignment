@@ -1,0 +1,80 @@
+/* Link Font */
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(../Font_Family/static/Rubik-Regular.ttf);
+}
+
+html {
+  font-size: 20px;
+  font-family: "Rubik-Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --HGray: #eee;
+  --Terk: aqua;
+  --White: White;
+}
+
+/* Let's Start */
+body {
+  background-color: var(--HGray);
+}
+
+.Container {
+  width: 90%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Card {
+  width: calc(95% / 3);
+  background-color: black;
+  text-align: center;
+  color: var(--White);
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+
+.Card .Picture img {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.Card .Picture img:hover {
+  transform: scale(1.05);
+}
+
+.Card .Description {
+  margin: 10px 0;
+}
+
+.Card .Description a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .Card {
+    width: calc(95% / 1);
+  }
+}
+@media (min-width: 768px) {
+  .Card {
+    width: calc(95% / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .Card {
+    width: calc(95% / 3);
+  }
+}
